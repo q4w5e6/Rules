@@ -175,8 +175,10 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # G
 # > Google
 # >> Youtube
-(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
+^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier) url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject-200
+^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
 
 # > Gofun
 ^https?+:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json url reject-200
@@ -485,6 +487,8 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/tiku\.zhan\.com\/Common\/newAd\/ url reject-200
 
 # Y
+# > Youtube++
+^https?+:\/\/api\.catch\.gift\/api\/v\d\/pagead\/ url reject-200
 # > Yahoo!
 ^https?+:\/\/m\.yap\.yahoo\.com\/v\d{2}\/getAds\.do url reject-200
 # > 萤石云视频
