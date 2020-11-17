@@ -177,7 +177,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # >> Youtube
 (^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1$3
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
-^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject
+^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject-200
 ^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject-200
 ^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
 
