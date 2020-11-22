@@ -58,9 +58,9 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # >> 天猫
 ^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} url reject-200
 # >> 优酷
-^https?+:\/\/.+?\.mp4\?ccode=0902 url reject-200
-^https?+:\/\/.+?\.mp4\?sid= url reject-200
-^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid= url reject-200
+^https?+:\/\/.+?\.mp4\?ccode=0902 url reject
+^https?+:\/\/.+?\.mp4\?sid= url reject
+^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid= url reject
 # > AcFun
 ^https?+:\/\/aes\.acfun\.cn\/s\?adzones url reject-200
 # > 爱回收
