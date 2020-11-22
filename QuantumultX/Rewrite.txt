@@ -88,8 +88,8 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do url reject-200
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
 # > 哔哩哔哩
-^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
-^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
+^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject
+^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject
 # > 抱抱
 ^https?+:\/\/www\.myhug\.cn\/ad\/ url reject-200
 # > 百词斩
