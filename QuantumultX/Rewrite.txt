@@ -452,6 +452,8 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
 # > 华尔街见闻
 ^https?+:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/ url reject-200
+# > 微信
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 # X
 # > 新浪
